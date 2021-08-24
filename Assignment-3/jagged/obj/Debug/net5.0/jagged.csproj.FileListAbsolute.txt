@@ -1,0 +1,16 @@
+C:\Users\hp\Desktop\Assignment-3\jagged\bin\Debug\net5.0\jagged.exe
+C:\Users\hp\Desktop\Assignment-3\jagged\bin\Debug\net5.0\jagged.deps.json
+C:\Users\hp\Desktop\Assignment-3\jagged\bin\Debug\net5.0\jagged.runtimeconfig.json
+C:\Users\hp\Desktop\Assignment-3\jagged\bin\Debug\net5.0\jagged.runtimeconfig.dev.json
+C:\Users\hp\Desktop\Assignment-3\jagged\bin\Debug\net5.0\jagged.dll
+C:\Users\hp\Desktop\Assignment-3\jagged\bin\Debug\net5.0\ref\jagged.dll
+C:\Users\hp\Desktop\Assignment-3\jagged\bin\Debug\net5.0\jagged.pdb
+C:\Users\hp\Desktop\Assignment-3\jagged\obj\Debug\net5.0\jagged.csproj.AssemblyReference.cache
+C:\Users\hp\Desktop\Assignment-3\jagged\obj\Debug\net5.0\jagged.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\hp\Desktop\Assignment-3\jagged\obj\Debug\net5.0\jagged.AssemblyInfoInputs.cache
+C:\Users\hp\Desktop\Assignment-3\jagged\obj\Debug\net5.0\jagged.AssemblyInfo.cs
+C:\Users\hp\Desktop\Assignment-3\jagged\obj\Debug\net5.0\jagged.csproj.CoreCompileInputs.cache
+C:\Users\hp\Desktop\Assignment-3\jagged\obj\Debug\net5.0\jagged.dll
+C:\Users\hp\Desktop\Assignment-3\jagged\obj\Debug\net5.0\ref\jagged.dll
+C:\Users\hp\Desktop\Assignment-3\jagged\obj\Debug\net5.0\jagged.pdb
+C:\Users\hp\Desktop\Assignment-3\jagged\obj\Debug\net5.0\jagged.genruntimeconfig.cache

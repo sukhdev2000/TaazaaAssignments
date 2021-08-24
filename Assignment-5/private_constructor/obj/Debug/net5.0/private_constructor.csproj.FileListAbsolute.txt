@@ -1,0 +1,16 @@
+C:\Users\hp\Desktop\TaazaaTraining-2021\TaazaaTraining-office Assignment\Assignment-5\private_constructor\bin\Debug\net5.0\private_constructor.exe
+C:\Users\hp\Desktop\TaazaaTraining-2021\TaazaaTraining-office Assignment\Assignment-5\private_constructor\bin\Debug\net5.0\private_constructor.deps.json
+C:\Users\hp\Desktop\TaazaaTraining-2021\TaazaaTraining-office Assignment\Assignment-5\private_constructor\bin\Debug\net5.0\private_constructor.runtimeconfig.json
+C:\Users\hp\Desktop\TaazaaTraining-2021\TaazaaTraining-office Assignment\Assignment-5\private_constructor\bin\Debug\net5.0\private_constructor.runtimeconfig.dev.json
+C:\Users\hp\Desktop\TaazaaTraining-2021\TaazaaTraining-office Assignment\Assignment-5\private_constructor\bin\Debug\net5.0\private_constructor.dll
+C:\Users\hp\Desktop\TaazaaTraining-2021\TaazaaTraining-office Assignment\Assignment-5\private_constructor\bin\Debug\net5.0\ref\private_constructor.dll
+C:\Users\hp\Desktop\TaazaaTraining-2021\TaazaaTraining-office Assignment\Assignment-5\private_constructor\bin\Debug\net5.0\private_constructor.pdb
+C:\Users\hp\Desktop\TaazaaTraining-2021\TaazaaTraining-office Assignment\Assignment-5\private_constructor\obj\Debug\net5.0\private_constructor.csproj.AssemblyReference.cache
+C:\Users\hp\Desktop\TaazaaTraining-2021\TaazaaTraining-office Assignment\Assignment-5\private_constructor\obj\Debug\net5.0\private_constructor.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\hp\Desktop\TaazaaTraining-2021\TaazaaTraining-office Assignment\Assignment-5\private_constructor\obj\Debug\net5.0\private_constructor.AssemblyInfoInputs.cache
+C:\Users\hp\Desktop\TaazaaTraining-2021\TaazaaTraining-office Assignment\Assignment-5\private_constructor\obj\Debug\net5.0\private_constructor.AssemblyInfo.cs
+C:\Users\hp\Desktop\TaazaaTraining-2021\TaazaaTraining-office Assignment\Assignment-5\private_constructor\obj\Debug\net5.0\private_constructor.csproj.CoreCompileInputs.cache
+C:\Users\hp\Desktop\TaazaaTraining-2021\TaazaaTraining-office Assignment\Assignment-5\private_constructor\obj\Debug\net5.0\private_constructor.dll
+C:\Users\hp\Desktop\TaazaaTraining-2021\TaazaaTraining-office Assignment\Assignment-5\private_constructor\obj\Debug\net5.0\ref\private_constructor.dll
+C:\Users\hp\Desktop\TaazaaTraining-2021\TaazaaTraining-office Assignment\Assignment-5\private_constructor\obj\Debug\net5.0\private_constructor.pdb
+C:\Users\hp\Desktop\TaazaaTraining-2021\TaazaaTraining-office Assignment\Assignment-5\private_constructor\obj\Debug\net5.0\private_constructor.genruntimeconfig.cache

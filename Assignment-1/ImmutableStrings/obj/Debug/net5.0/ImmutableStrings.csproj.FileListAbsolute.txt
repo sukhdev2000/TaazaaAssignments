@@ -1,0 +1,16 @@
+C:\Users\hp\Desktop\TaazaaTraining-2021\TaazaaTraining-office Assignment\Assignment-1\ImmutableStrings\bin\Debug\net5.0\ImmutableStrings.exe
+C:\Users\hp\Desktop\TaazaaTraining-2021\TaazaaTraining-office Assignment\Assignment-1\ImmutableStrings\bin\Debug\net5.0\ImmutableStrings.deps.json
+C:\Users\hp\Desktop\TaazaaTraining-2021\TaazaaTraining-office Assignment\Assignment-1\ImmutableStrings\bin\Debug\net5.0\ImmutableStrings.runtimeconfig.json
+C:\Users\hp\Desktop\TaazaaTraining-2021\TaazaaTraining-office Assignment\Assignment-1\ImmutableStrings\bin\Debug\net5.0\ImmutableStrings.runtimeconfig.dev.json
+C:\Users\hp\Desktop\TaazaaTraining-2021\TaazaaTraining-office Assignment\Assignment-1\ImmutableStrings\bin\Debug\net5.0\ImmutableStrings.dll
+C:\Users\hp\Desktop\TaazaaTraining-2021\TaazaaTraining-office Assignment\Assignment-1\ImmutableStrings\bin\Debug\net5.0\ref\ImmutableStrings.dll
+C:\Users\hp\Desktop\TaazaaTraining-2021\TaazaaTraining-office Assignment\Assignment-1\ImmutableStrings\bin\Debug\net5.0\ImmutableStrings.pdb
+C:\Users\hp\Desktop\TaazaaTraining-2021\TaazaaTraining-office Assignment\Assignment-1\ImmutableStrings\obj\Debug\net5.0\ImmutableStrings.csproj.AssemblyReference.cache
+C:\Users\hp\Desktop\TaazaaTraining-2021\TaazaaTraining-office Assignment\Assignment-1\ImmutableStrings\obj\Debug\net5.0\ImmutableStrings.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\hp\Desktop\TaazaaTraining-2021\TaazaaTraining-office Assignment\Assignment-1\ImmutableStrings\obj\Debug\net5.0\ImmutableStrings.AssemblyInfoInputs.cache
+C:\Users\hp\Desktop\TaazaaTraining-2021\TaazaaTraining-office Assignment\Assignment-1\ImmutableStrings\obj\Debug\net5.0\ImmutableStrings.AssemblyInfo.cs
+C:\Users\hp\Desktop\TaazaaTraining-2021\TaazaaTraining-office Assignment\Assignment-1\ImmutableStrings\obj\Debug\net5.0\ImmutableStrings.csproj.CoreCompileInputs.cache
+C:\Users\hp\Desktop\TaazaaTraining-2021\TaazaaTraining-office Assignment\Assignment-1\ImmutableStrings\obj\Debug\net5.0\ImmutableStrings.dll
+C:\Users\hp\Desktop\TaazaaTraining-2021\TaazaaTraining-office Assignment\Assignment-1\ImmutableStrings\obj\Debug\net5.0\ref\ImmutableStrings.dll
+C:\Users\hp\Desktop\TaazaaTraining-2021\TaazaaTraining-office Assignment\Assignment-1\ImmutableStrings\obj\Debug\net5.0\ImmutableStrings.pdb
+C:\Users\hp\Desktop\TaazaaTraining-2021\TaazaaTraining-office Assignment\Assignment-1\ImmutableStrings\obj\Debug\net5.0\ImmutableStrings.genruntimeconfig.cache

@@ -1,0 +1,16 @@
+C:\Users\hp\Desktop\TaazaaTraining-2021\TaazaaTraining-office Assignment\Assignment-5\dictionary_demo\bin\Debug\net5.0\dictionary_demo.exe
+C:\Users\hp\Desktop\TaazaaTraining-2021\TaazaaTraining-office Assignment\Assignment-5\dictionary_demo\bin\Debug\net5.0\dictionary_demo.deps.json
+C:\Users\hp\Desktop\TaazaaTraining-2021\TaazaaTraining-office Assignment\Assignment-5\dictionary_demo\bin\Debug\net5.0\dictionary_demo.runtimeconfig.json
+C:\Users\hp\Desktop\TaazaaTraining-2021\TaazaaTraining-office Assignment\Assignment-5\dictionary_demo\bin\Debug\net5.0\dictionary_demo.runtimeconfig.dev.json
+C:\Users\hp\Desktop\TaazaaTraining-2021\TaazaaTraining-office Assignment\Assignment-5\dictionary_demo\bin\Debug\net5.0\dictionary_demo.dll
+C:\Users\hp\Desktop\TaazaaTraining-2021\TaazaaTraining-office Assignment\Assignment-5\dictionary_demo\bin\Debug\net5.0\ref\dictionary_demo.dll
+C:\Users\hp\Desktop\TaazaaTraining-2021\TaazaaTraining-office Assignment\Assignment-5\dictionary_demo\bin\Debug\net5.0\dictionary_demo.pdb
+C:\Users\hp\Desktop\TaazaaTraining-2021\TaazaaTraining-office Assignment\Assignment-5\dictionary_demo\obj\Debug\net5.0\dictionary_demo.csproj.AssemblyReference.cache
+C:\Users\hp\Desktop\TaazaaTraining-2021\TaazaaTraining-office Assignment\Assignment-5\dictionary_demo\obj\Debug\net5.0\dictionary_demo.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\hp\Desktop\TaazaaTraining-2021\TaazaaTraining-office Assignment\Assignment-5\dictionary_demo\obj\Debug\net5.0\dictionary_demo.AssemblyInfoInputs.cache
+C:\Users\hp\Desktop\TaazaaTraining-2021\TaazaaTraining-office Assignment\Assignment-5\dictionary_demo\obj\Debug\net5.0\dictionary_demo.AssemblyInfo.cs
+C:\Users\hp\Desktop\TaazaaTraining-2021\TaazaaTraining-office Assignment\Assignment-5\dictionary_demo\obj\Debug\net5.0\dictionary_demo.csproj.CoreCompileInputs.cache
+C:\Users\hp\Desktop\TaazaaTraining-2021\TaazaaTraining-office Assignment\Assignment-5\dictionary_demo\obj\Debug\net5.0\dictionary_demo.dll
+C:\Users\hp\Desktop\TaazaaTraining-2021\TaazaaTraining-office Assignment\Assignment-5\dictionary_demo\obj\Debug\net5.0\ref\dictionary_demo.dll
+C:\Users\hp\Desktop\TaazaaTraining-2021\TaazaaTraining-office Assignment\Assignment-5\dictionary_demo\obj\Debug\net5.0\dictionary_demo.pdb
+C:\Users\hp\Desktop\TaazaaTraining-2021\TaazaaTraining-office Assignment\Assignment-5\dictionary_demo\obj\Debug\net5.0\dictionary_demo.genruntimeconfig.cache

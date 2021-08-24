@@ -1,0 +1,12 @@
+C:\Users\hp\Desktop\TaazaaTraining-2021\TaazaaTraining-practice folder\practice\Lib_creation\lab1\bin\Debug\net5.0\lab1.deps.json
+C:\Users\hp\Desktop\TaazaaTraining-2021\TaazaaTraining-practice folder\practice\Lib_creation\lab1\bin\Debug\net5.0\lab1.dll
+C:\Users\hp\Desktop\TaazaaTraining-2021\TaazaaTraining-practice folder\practice\Lib_creation\lab1\bin\Debug\net5.0\ref\lab1.dll
+C:\Users\hp\Desktop\TaazaaTraining-2021\TaazaaTraining-practice folder\practice\Lib_creation\lab1\bin\Debug\net5.0\lab1.pdb
+C:\Users\hp\Desktop\TaazaaTraining-2021\TaazaaTraining-practice folder\practice\Lib_creation\lab1\obj\Debug\net5.0\lab1.csproj.AssemblyReference.cache
+C:\Users\hp\Desktop\TaazaaTraining-2021\TaazaaTraining-practice folder\practice\Lib_creation\lab1\obj\Debug\net5.0\lab1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\hp\Desktop\TaazaaTraining-2021\TaazaaTraining-practice folder\practice\Lib_creation\lab1\obj\Debug\net5.0\lab1.AssemblyInfoInputs.cache
+C:\Users\hp\Desktop\TaazaaTraining-2021\TaazaaTraining-practice folder\practice\Lib_creation\lab1\obj\Debug\net5.0\lab1.AssemblyInfo.cs
+C:\Users\hp\Desktop\TaazaaTraining-2021\TaazaaTraining-practice folder\practice\Lib_creation\lab1\obj\Debug\net5.0\lab1.csproj.CoreCompileInputs.cache
+C:\Users\hp\Desktop\TaazaaTraining-2021\TaazaaTraining-practice folder\practice\Lib_creation\lab1\obj\Debug\net5.0\lab1.dll
+C:\Users\hp\Desktop\TaazaaTraining-2021\TaazaaTraining-practice folder\practice\Lib_creation\lab1\obj\Debug\net5.0\ref\lab1.dll
+C:\Users\hp\Desktop\TaazaaTraining-2021\TaazaaTraining-practice folder\practice\Lib_creation\lab1\obj\Debug\net5.0\lab1.pdb

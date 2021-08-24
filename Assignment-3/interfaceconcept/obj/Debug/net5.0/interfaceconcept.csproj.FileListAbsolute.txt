@@ -1,0 +1,16 @@
+C:\Users\hp\Desktop\Assignment-3\interfaceconcept\bin\Debug\net5.0\interfaceconcept.exe
+C:\Users\hp\Desktop\Assignment-3\interfaceconcept\bin\Debug\net5.0\interfaceconcept.deps.json
+C:\Users\hp\Desktop\Assignment-3\interfaceconcept\bin\Debug\net5.0\interfaceconcept.runtimeconfig.json
+C:\Users\hp\Desktop\Assignment-3\interfaceconcept\bin\Debug\net5.0\interfaceconcept.runtimeconfig.dev.json
+C:\Users\hp\Desktop\Assignment-3\interfaceconcept\bin\Debug\net5.0\interfaceconcept.dll
+C:\Users\hp\Desktop\Assignment-3\interfaceconcept\bin\Debug\net5.0\ref\interfaceconcept.dll
+C:\Users\hp\Desktop\Assignment-3\interfaceconcept\bin\Debug\net5.0\interfaceconcept.pdb
+C:\Users\hp\Desktop\Assignment-3\interfaceconcept\obj\Debug\net5.0\interfaceconcept.csproj.AssemblyReference.cache
+C:\Users\hp\Desktop\Assignment-3\interfaceconcept\obj\Debug\net5.0\interfaceconcept.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\hp\Desktop\Assignment-3\interfaceconcept\obj\Debug\net5.0\interfaceconcept.AssemblyInfoInputs.cache
+C:\Users\hp\Desktop\Assignment-3\interfaceconcept\obj\Debug\net5.0\interfaceconcept.AssemblyInfo.cs
+C:\Users\hp\Desktop\Assignment-3\interfaceconcept\obj\Debug\net5.0\interfaceconcept.csproj.CoreCompileInputs.cache
+C:\Users\hp\Desktop\Assignment-3\interfaceconcept\obj\Debug\net5.0\interfaceconcept.dll
+C:\Users\hp\Desktop\Assignment-3\interfaceconcept\obj\Debug\net5.0\ref\interfaceconcept.dll
+C:\Users\hp\Desktop\Assignment-3\interfaceconcept\obj\Debug\net5.0\interfaceconcept.pdb
+C:\Users\hp\Desktop\Assignment-3\interfaceconcept\obj\Debug\net5.0\interfaceconcept.genruntimeconfig.cache

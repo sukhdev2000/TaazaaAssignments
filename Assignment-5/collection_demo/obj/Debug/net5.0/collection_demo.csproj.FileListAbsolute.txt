@@ -1,0 +1,16 @@
+C:\Users\hp\Desktop\TaazaaTraining-2021\TaazaaTraining-office Assignment\Assignment-5\collection_demo\bin\Debug\net5.0\collection_demo.exe
+C:\Users\hp\Desktop\TaazaaTraining-2021\TaazaaTraining-office Assignment\Assignment-5\collection_demo\bin\Debug\net5.0\collection_demo.deps.json
+C:\Users\hp\Desktop\TaazaaTraining-2021\TaazaaTraining-office Assignment\Assignment-5\collection_demo\bin\Debug\net5.0\collection_demo.runtimeconfig.json
+C:\Users\hp\Desktop\TaazaaTraining-2021\TaazaaTraining-office Assignment\Assignment-5\collection_demo\bin\Debug\net5.0\collection_demo.runtimeconfig.dev.json
+C:\Users\hp\Desktop\TaazaaTraining-2021\TaazaaTraining-office Assignment\Assignment-5\collection_demo\bin\Debug\net5.0\collection_demo.dll
+C:\Users\hp\Desktop\TaazaaTraining-2021\TaazaaTraining-office Assignment\Assignment-5\collection_demo\bin\Debug\net5.0\ref\collection_demo.dll
+C:\Users\hp\Desktop\TaazaaTraining-2021\TaazaaTraining-office Assignment\Assignment-5\collection_demo\bin\Debug\net5.0\collection_demo.pdb
+C:\Users\hp\Desktop\TaazaaTraining-2021\TaazaaTraining-office Assignment\Assignment-5\collection_demo\obj\Debug\net5.0\collection_demo.csproj.AssemblyReference.cache
+C:\Users\hp\Desktop\TaazaaTraining-2021\TaazaaTraining-office Assignment\Assignment-5\collection_demo\obj\Debug\net5.0\collection_demo.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\hp\Desktop\TaazaaTraining-2021\TaazaaTraining-office Assignment\Assignment-5\collection_demo\obj\Debug\net5.0\collection_demo.AssemblyInfoInputs.cache
+C:\Users\hp\Desktop\TaazaaTraining-2021\TaazaaTraining-office Assignment\Assignment-5\collection_demo\obj\Debug\net5.0\collection_demo.AssemblyInfo.cs
+C:\Users\hp\Desktop\TaazaaTraining-2021\TaazaaTraining-office Assignment\Assignment-5\collection_demo\obj\Debug\net5.0\collection_demo.csproj.CoreCompileInputs.cache
+C:\Users\hp\Desktop\TaazaaTraining-2021\TaazaaTraining-office Assignment\Assignment-5\collection_demo\obj\Debug\net5.0\collection_demo.dll
+C:\Users\hp\Desktop\TaazaaTraining-2021\TaazaaTraining-office Assignment\Assignment-5\collection_demo\obj\Debug\net5.0\ref\collection_demo.dll
+C:\Users\hp\Desktop\TaazaaTraining-2021\TaazaaTraining-office Assignment\Assignment-5\collection_demo\obj\Debug\net5.0\collection_demo.pdb
+C:\Users\hp\Desktop\TaazaaTraining-2021\TaazaaTraining-office Assignment\Assignment-5\collection_demo\obj\Debug\net5.0\collection_demo.genruntimeconfig.cache

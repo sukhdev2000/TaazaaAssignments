@@ -1,0 +1,16 @@
+C:\Users\hp\Desktop\Assignment-3\2-d\bin\Debug\net5.0\2-d.exe
+C:\Users\hp\Desktop\Assignment-3\2-d\bin\Debug\net5.0\2-d.deps.json
+C:\Users\hp\Desktop\Assignment-3\2-d\bin\Debug\net5.0\2-d.runtimeconfig.json
+C:\Users\hp\Desktop\Assignment-3\2-d\bin\Debug\net5.0\2-d.runtimeconfig.dev.json
+C:\Users\hp\Desktop\Assignment-3\2-d\bin\Debug\net5.0\2-d.dll
+C:\Users\hp\Desktop\Assignment-3\2-d\bin\Debug\net5.0\ref\2-d.dll
+C:\Users\hp\Desktop\Assignment-3\2-d\bin\Debug\net5.0\2-d.pdb
+C:\Users\hp\Desktop\Assignment-3\2-d\obj\Debug\net5.0\2-d.csproj.AssemblyReference.cache
+C:\Users\hp\Desktop\Assignment-3\2-d\obj\Debug\net5.0\2-d.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\hp\Desktop\Assignment-3\2-d\obj\Debug\net5.0\2-d.AssemblyInfoInputs.cache
+C:\Users\hp\Desktop\Assignment-3\2-d\obj\Debug\net5.0\2-d.AssemblyInfo.cs
+C:\Users\hp\Desktop\Assignment-3\2-d\obj\Debug\net5.0\2-d.csproj.CoreCompileInputs.cache
+C:\Users\hp\Desktop\Assignment-3\2-d\obj\Debug\net5.0\2-d.dll
+C:\Users\hp\Desktop\Assignment-3\2-d\obj\Debug\net5.0\ref\2-d.dll
+C:\Users\hp\Desktop\Assignment-3\2-d\obj\Debug\net5.0\2-d.pdb
+C:\Users\hp\Desktop\Assignment-3\2-d\obj\Debug\net5.0\2-d.genruntimeconfig.cache

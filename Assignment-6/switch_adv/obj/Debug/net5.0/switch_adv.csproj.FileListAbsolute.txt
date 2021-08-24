@@ -1,0 +1,16 @@
+C:\Users\hp\Desktop\TaazaaTraining-2021\TaazaaTraining-office Assignment\Assignment-6\switch_adv\bin\Debug\net5.0\switch_adv.exe
+C:\Users\hp\Desktop\TaazaaTraining-2021\TaazaaTraining-office Assignment\Assignment-6\switch_adv\bin\Debug\net5.0\switch_adv.deps.json
+C:\Users\hp\Desktop\TaazaaTraining-2021\TaazaaTraining-office Assignment\Assignment-6\switch_adv\bin\Debug\net5.0\switch_adv.runtimeconfig.json
+C:\Users\hp\Desktop\TaazaaTraining-2021\TaazaaTraining-office Assignment\Assignment-6\switch_adv\bin\Debug\net5.0\switch_adv.runtimeconfig.dev.json
+C:\Users\hp\Desktop\TaazaaTraining-2021\TaazaaTraining-office Assignment\Assignment-6\switch_adv\bin\Debug\net5.0\switch_adv.dll
+C:\Users\hp\Desktop\TaazaaTraining-2021\TaazaaTraining-office Assignment\Assignment-6\switch_adv\bin\Debug\net5.0\ref\switch_adv.dll
+C:\Users\hp\Desktop\TaazaaTraining-2021\TaazaaTraining-office Assignment\Assignment-6\switch_adv\bin\Debug\net5.0\switch_adv.pdb
+C:\Users\hp\Desktop\TaazaaTraining-2021\TaazaaTraining-office Assignment\Assignment-6\switch_adv\obj\Debug\net5.0\switch_adv.csproj.AssemblyReference.cache
+C:\Users\hp\Desktop\TaazaaTraining-2021\TaazaaTraining-office Assignment\Assignment-6\switch_adv\obj\Debug\net5.0\switch_adv.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\hp\Desktop\TaazaaTraining-2021\TaazaaTraining-office Assignment\Assignment-6\switch_adv\obj\Debug\net5.0\switch_adv.AssemblyInfoInputs.cache
+C:\Users\hp\Desktop\TaazaaTraining-2021\TaazaaTraining-office Assignment\Assignment-6\switch_adv\obj\Debug\net5.0\switch_adv.AssemblyInfo.cs
+C:\Users\hp\Desktop\TaazaaTraining-2021\TaazaaTraining-office Assignment\Assignment-6\switch_adv\obj\Debug\net5.0\switch_adv.csproj.CoreCompileInputs.cache
+C:\Users\hp\Desktop\TaazaaTraining-2021\TaazaaTraining-office Assignment\Assignment-6\switch_adv\obj\Debug\net5.0\switch_adv.dll
+C:\Users\hp\Desktop\TaazaaTraining-2021\TaazaaTraining-office Assignment\Assignment-6\switch_adv\obj\Debug\net5.0\ref\switch_adv.dll
+C:\Users\hp\Desktop\TaazaaTraining-2021\TaazaaTraining-office Assignment\Assignment-6\switch_adv\obj\Debug\net5.0\switch_adv.pdb
+C:\Users\hp\Desktop\TaazaaTraining-2021\TaazaaTraining-office Assignment\Assignment-6\switch_adv\obj\Debug\net5.0\switch_adv.genruntimeconfig.cache

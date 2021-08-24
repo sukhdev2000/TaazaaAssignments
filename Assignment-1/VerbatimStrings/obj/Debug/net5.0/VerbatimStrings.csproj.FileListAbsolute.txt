@@ -1,0 +1,16 @@
+C:\Users\hp\Desktop\TaazaaTraining-2021\TaazaaTraining-office Assignment\Assignment-1\VerbatimStrings\bin\Debug\net5.0\VerbatimStrings.exe
+C:\Users\hp\Desktop\TaazaaTraining-2021\TaazaaTraining-office Assignment\Assignment-1\VerbatimStrings\bin\Debug\net5.0\VerbatimStrings.deps.json
+C:\Users\hp\Desktop\TaazaaTraining-2021\TaazaaTraining-office Assignment\Assignment-1\VerbatimStrings\bin\Debug\net5.0\VerbatimStrings.runtimeconfig.json
+C:\Users\hp\Desktop\TaazaaTraining-2021\TaazaaTraining-office Assignment\Assignment-1\VerbatimStrings\bin\Debug\net5.0\VerbatimStrings.runtimeconfig.dev.json
+C:\Users\hp\Desktop\TaazaaTraining-2021\TaazaaTraining-office Assignment\Assignment-1\VerbatimStrings\bin\Debug\net5.0\VerbatimStrings.dll
+C:\Users\hp\Desktop\TaazaaTraining-2021\TaazaaTraining-office Assignment\Assignment-1\VerbatimStrings\bin\Debug\net5.0\ref\VerbatimStrings.dll
+C:\Users\hp\Desktop\TaazaaTraining-2021\TaazaaTraining-office Assignment\Assignment-1\VerbatimStrings\bin\Debug\net5.0\VerbatimStrings.pdb
+C:\Users\hp\Desktop\TaazaaTraining-2021\TaazaaTraining-office Assignment\Assignment-1\VerbatimStrings\obj\Debug\net5.0\VerbatimStrings.csproj.AssemblyReference.cache
+C:\Users\hp\Desktop\TaazaaTraining-2021\TaazaaTraining-office Assignment\Assignment-1\VerbatimStrings\obj\Debug\net5.0\VerbatimStrings.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\hp\Desktop\TaazaaTraining-2021\TaazaaTraining-office Assignment\Assignment-1\VerbatimStrings\obj\Debug\net5.0\VerbatimStrings.AssemblyInfoInputs.cache
+C:\Users\hp\Desktop\TaazaaTraining-2021\TaazaaTraining-office Assignment\Assignment-1\VerbatimStrings\obj\Debug\net5.0\VerbatimStrings.AssemblyInfo.cs
+C:\Users\hp\Desktop\TaazaaTraining-2021\TaazaaTraining-office Assignment\Assignment-1\VerbatimStrings\obj\Debug\net5.0\VerbatimStrings.csproj.CoreCompileInputs.cache
+C:\Users\hp\Desktop\TaazaaTraining-2021\TaazaaTraining-office Assignment\Assignment-1\VerbatimStrings\obj\Debug\net5.0\VerbatimStrings.dll
+C:\Users\hp\Desktop\TaazaaTraining-2021\TaazaaTraining-office Assignment\Assignment-1\VerbatimStrings\obj\Debug\net5.0\ref\VerbatimStrings.dll
+C:\Users\hp\Desktop\TaazaaTraining-2021\TaazaaTraining-office Assignment\Assignment-1\VerbatimStrings\obj\Debug\net5.0\VerbatimStrings.pdb
+C:\Users\hp\Desktop\TaazaaTraining-2021\TaazaaTraining-office Assignment\Assignment-1\VerbatimStrings\obj\Debug\net5.0\VerbatimStrings.genruntimeconfig.cache

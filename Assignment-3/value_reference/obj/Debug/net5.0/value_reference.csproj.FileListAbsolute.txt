@@ -1,0 +1,16 @@
+C:\Users\hp\Desktop\Assignment-3\value_reference\bin\Debug\net5.0\value_reference.exe
+C:\Users\hp\Desktop\Assignment-3\value_reference\bin\Debug\net5.0\value_reference.deps.json
+C:\Users\hp\Desktop\Assignment-3\value_reference\bin\Debug\net5.0\value_reference.runtimeconfig.json
+C:\Users\hp\Desktop\Assignment-3\value_reference\bin\Debug\net5.0\value_reference.runtimeconfig.dev.json
+C:\Users\hp\Desktop\Assignment-3\value_reference\bin\Debug\net5.0\value_reference.dll
+C:\Users\hp\Desktop\Assignment-3\value_reference\bin\Debug\net5.0\ref\value_reference.dll
+C:\Users\hp\Desktop\Assignment-3\value_reference\bin\Debug\net5.0\value_reference.pdb
+C:\Users\hp\Desktop\Assignment-3\value_reference\obj\Debug\net5.0\value_reference.csproj.AssemblyReference.cache
+C:\Users\hp\Desktop\Assignment-3\value_reference\obj\Debug\net5.0\value_reference.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\hp\Desktop\Assignment-3\value_reference\obj\Debug\net5.0\value_reference.AssemblyInfoInputs.cache
+C:\Users\hp\Desktop\Assignment-3\value_reference\obj\Debug\net5.0\value_reference.AssemblyInfo.cs
+C:\Users\hp\Desktop\Assignment-3\value_reference\obj\Debug\net5.0\value_reference.csproj.CoreCompileInputs.cache
+C:\Users\hp\Desktop\Assignment-3\value_reference\obj\Debug\net5.0\value_reference.dll
+C:\Users\hp\Desktop\Assignment-3\value_reference\obj\Debug\net5.0\ref\value_reference.dll
+C:\Users\hp\Desktop\Assignment-3\value_reference\obj\Debug\net5.0\value_reference.pdb
+C:\Users\hp\Desktop\Assignment-3\value_reference\obj\Debug\net5.0\value_reference.genruntimeconfig.cache

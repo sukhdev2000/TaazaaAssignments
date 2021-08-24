@@ -1,0 +1,16 @@
+C:\Users\hp\Desktop\TaazaaTraining-2021\TaazaaTraining-office Assignment\Assignment-6\switch_basic\obj\Debug\net5.0\switch_basic.csproj.AssemblyReference.cache
+C:\Users\hp\Desktop\TaazaaTraining-2021\TaazaaTraining-office Assignment\Assignment-6\switch_basic\obj\Debug\net5.0\switch_basic.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\hp\Desktop\TaazaaTraining-2021\TaazaaTraining-office Assignment\Assignment-6\switch_basic\obj\Debug\net5.0\switch_basic.AssemblyInfoInputs.cache
+C:\Users\hp\Desktop\TaazaaTraining-2021\TaazaaTraining-office Assignment\Assignment-6\switch_basic\obj\Debug\net5.0\switch_basic.AssemblyInfo.cs
+C:\Users\hp\Desktop\TaazaaTraining-2021\TaazaaTraining-office Assignment\Assignment-6\switch_basic\obj\Debug\net5.0\switch_basic.csproj.CoreCompileInputs.cache
+C:\Users\hp\Desktop\TaazaaTraining-2021\TaazaaTraining-office Assignment\Assignment-6\switch_basic\bin\Debug\net5.0\switch_basic.exe
+C:\Users\hp\Desktop\TaazaaTraining-2021\TaazaaTraining-office Assignment\Assignment-6\switch_basic\bin\Debug\net5.0\switch_basic.deps.json
+C:\Users\hp\Desktop\TaazaaTraining-2021\TaazaaTraining-office Assignment\Assignment-6\switch_basic\bin\Debug\net5.0\switch_basic.runtimeconfig.json
+C:\Users\hp\Desktop\TaazaaTraining-2021\TaazaaTraining-office Assignment\Assignment-6\switch_basic\bin\Debug\net5.0\switch_basic.runtimeconfig.dev.json
+C:\Users\hp\Desktop\TaazaaTraining-2021\TaazaaTraining-office Assignment\Assignment-6\switch_basic\bin\Debug\net5.0\switch_basic.dll
+C:\Users\hp\Desktop\TaazaaTraining-2021\TaazaaTraining-office Assignment\Assignment-6\switch_basic\bin\Debug\net5.0\ref\switch_basic.dll
+C:\Users\hp\Desktop\TaazaaTraining-2021\TaazaaTraining-office Assignment\Assignment-6\switch_basic\bin\Debug\net5.0\switch_basic.pdb
+C:\Users\hp\Desktop\TaazaaTraining-2021\TaazaaTraining-office Assignment\Assignment-6\switch_basic\obj\Debug\net5.0\switch_basic.dll
+C:\Users\hp\Desktop\TaazaaTraining-2021\TaazaaTraining-office Assignment\Assignment-6\switch_basic\obj\Debug\net5.0\ref\switch_basic.dll
+C:\Users\hp\Desktop\TaazaaTraining-2021\TaazaaTraining-office Assignment\Assignment-6\switch_basic\obj\Debug\net5.0\switch_basic.pdb
+C:\Users\hp\Desktop\TaazaaTraining-2021\TaazaaTraining-office Assignment\Assignment-6\switch_basic\obj\Debug\net5.0\switch_basic.genruntimeconfig.cache

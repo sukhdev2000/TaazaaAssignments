@@ -1,0 +1,16 @@
+C:\Users\hp\Desktop\TaazaaTraining-2021\TaazaaTraining-office Assignment\Assignment-4\struct_demo\bin\Debug\net5.0\struct_demo.exe
+C:\Users\hp\Desktop\TaazaaTraining-2021\TaazaaTraining-office Assignment\Assignment-4\struct_demo\bin\Debug\net5.0\struct_demo.deps.json
+C:\Users\hp\Desktop\TaazaaTraining-2021\TaazaaTraining-office Assignment\Assignment-4\struct_demo\bin\Debug\net5.0\struct_demo.runtimeconfig.json
+C:\Users\hp\Desktop\TaazaaTraining-2021\TaazaaTraining-office Assignment\Assignment-4\struct_demo\bin\Debug\net5.0\struct_demo.runtimeconfig.dev.json
+C:\Users\hp\Desktop\TaazaaTraining-2021\TaazaaTraining-office Assignment\Assignment-4\struct_demo\bin\Debug\net5.0\struct_demo.dll
+C:\Users\hp\Desktop\TaazaaTraining-2021\TaazaaTraining-office Assignment\Assignment-4\struct_demo\bin\Debug\net5.0\ref\struct_demo.dll
+C:\Users\hp\Desktop\TaazaaTraining-2021\TaazaaTraining-office Assignment\Assignment-4\struct_demo\bin\Debug\net5.0\struct_demo.pdb
+C:\Users\hp\Desktop\TaazaaTraining-2021\TaazaaTraining-office Assignment\Assignment-4\struct_demo\obj\Debug\net5.0\struct_demo.csproj.AssemblyReference.cache
+C:\Users\hp\Desktop\TaazaaTraining-2021\TaazaaTraining-office Assignment\Assignment-4\struct_demo\obj\Debug\net5.0\struct_demo.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\hp\Desktop\TaazaaTraining-2021\TaazaaTraining-office Assignment\Assignment-4\struct_demo\obj\Debug\net5.0\struct_demo.AssemblyInfoInputs.cache
+C:\Users\hp\Desktop\TaazaaTraining-2021\TaazaaTraining-office Assignment\Assignment-4\struct_demo\obj\Debug\net5.0\struct_demo.AssemblyInfo.cs
+C:\Users\hp\Desktop\TaazaaTraining-2021\TaazaaTraining-office Assignment\Assignment-4\struct_demo\obj\Debug\net5.0\struct_demo.csproj.CoreCompileInputs.cache
+C:\Users\hp\Desktop\TaazaaTraining-2021\TaazaaTraining-office Assignment\Assignment-4\struct_demo\obj\Debug\net5.0\struct_demo.dll
+C:\Users\hp\Desktop\TaazaaTraining-2021\TaazaaTraining-office Assignment\Assignment-4\struct_demo\obj\Debug\net5.0\ref\struct_demo.dll
+C:\Users\hp\Desktop\TaazaaTraining-2021\TaazaaTraining-office Assignment\Assignment-4\struct_demo\obj\Debug\net5.0\struct_demo.pdb
+C:\Users\hp\Desktop\TaazaaTraining-2021\TaazaaTraining-office Assignment\Assignment-4\struct_demo\obj\Debug\net5.0\struct_demo.genruntimeconfig.cache

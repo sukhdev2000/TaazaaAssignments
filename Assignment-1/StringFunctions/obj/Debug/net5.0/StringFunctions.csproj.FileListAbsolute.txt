@@ -1,0 +1,16 @@
+C:\Users\hp\Desktop\TaazaaTraining-2021\TaazaaTraining-office Assignment\Assignment-1\StringFunctions\bin\Debug\net5.0\StringFunctions.exe
+C:\Users\hp\Desktop\TaazaaTraining-2021\TaazaaTraining-office Assignment\Assignment-1\StringFunctions\bin\Debug\net5.0\StringFunctions.deps.json
+C:\Users\hp\Desktop\TaazaaTraining-2021\TaazaaTraining-office Assignment\Assignment-1\StringFunctions\bin\Debug\net5.0\StringFunctions.runtimeconfig.json
+C:\Users\hp\Desktop\TaazaaTraining-2021\TaazaaTraining-office Assignment\Assignment-1\StringFunctions\bin\Debug\net5.0\StringFunctions.runtimeconfig.dev.json
+C:\Users\hp\Desktop\TaazaaTraining-2021\TaazaaTraining-office Assignment\Assignment-1\StringFunctions\bin\Debug\net5.0\StringFunctions.dll
+C:\Users\hp\Desktop\TaazaaTraining-2021\TaazaaTraining-office Assignment\Assignment-1\StringFunctions\bin\Debug\net5.0\ref\StringFunctions.dll
+C:\Users\hp\Desktop\TaazaaTraining-2021\TaazaaTraining-office Assignment\Assignment-1\StringFunctions\bin\Debug\net5.0\StringFunctions.pdb
+C:\Users\hp\Desktop\TaazaaTraining-2021\TaazaaTraining-office Assignment\Assignment-1\StringFunctions\obj\Debug\net5.0\StringFunctions.csproj.AssemblyReference.cache
+C:\Users\hp\Desktop\TaazaaTraining-2021\TaazaaTraining-office Assignment\Assignment-1\StringFunctions\obj\Debug\net5.0\StringFunctions.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\hp\Desktop\TaazaaTraining-2021\TaazaaTraining-office Assignment\Assignment-1\StringFunctions\obj\Debug\net5.0\StringFunctions.AssemblyInfoInputs.cache
+C:\Users\hp\Desktop\TaazaaTraining-2021\TaazaaTraining-office Assignment\Assignment-1\StringFunctions\obj\Debug\net5.0\StringFunctions.AssemblyInfo.cs
+C:\Users\hp\Desktop\TaazaaTraining-2021\TaazaaTraining-office Assignment\Assignment-1\StringFunctions\obj\Debug\net5.0\StringFunctions.csproj.CoreCompileInputs.cache
+C:\Users\hp\Desktop\TaazaaTraining-2021\TaazaaTraining-office Assignment\Assignment-1\StringFunctions\obj\Debug\net5.0\StringFunctions.dll
+C:\Users\hp\Desktop\TaazaaTraining-2021\TaazaaTraining-office Assignment\Assignment-1\StringFunctions\obj\Debug\net5.0\ref\StringFunctions.dll
+C:\Users\hp\Desktop\TaazaaTraining-2021\TaazaaTraining-office Assignment\Assignment-1\StringFunctions\obj\Debug\net5.0\StringFunctions.pdb
+C:\Users\hp\Desktop\TaazaaTraining-2021\TaazaaTraining-office Assignment\Assignment-1\StringFunctions\obj\Debug\net5.0\StringFunctions.genruntimeconfig.cache
