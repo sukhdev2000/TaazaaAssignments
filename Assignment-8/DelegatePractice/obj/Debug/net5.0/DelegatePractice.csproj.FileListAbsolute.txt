@@ -1,0 +1,16 @@
+C:\Users\hp\Desktop\TaazaaTraining-2021\TaazaaTraining-office Assignment\Assignment-8\DelegatePractice\bin\Debug\net5.0\DelegatePractice.exe
+C:\Users\hp\Desktop\TaazaaTraining-2021\TaazaaTraining-office Assignment\Assignment-8\DelegatePractice\bin\Debug\net5.0\DelegatePractice.deps.json
+C:\Users\hp\Desktop\TaazaaTraining-2021\TaazaaTraining-office Assignment\Assignment-8\DelegatePractice\bin\Debug\net5.0\DelegatePractice.runtimeconfig.json
+C:\Users\hp\Desktop\TaazaaTraining-2021\TaazaaTraining-office Assignment\Assignment-8\DelegatePractice\bin\Debug\net5.0\DelegatePractice.runtimeconfig.dev.json
+C:\Users\hp\Desktop\TaazaaTraining-2021\TaazaaTraining-office Assignment\Assignment-8\DelegatePractice\bin\Debug\net5.0\DelegatePractice.dll
+C:\Users\hp\Desktop\TaazaaTraining-2021\TaazaaTraining-office Assignment\Assignment-8\DelegatePractice\bin\Debug\net5.0\ref\DelegatePractice.dll
+C:\Users\hp\Desktop\TaazaaTraining-2021\TaazaaTraining-office Assignment\Assignment-8\DelegatePractice\bin\Debug\net5.0\DelegatePractice.pdb
+C:\Users\hp\Desktop\TaazaaTraining-2021\TaazaaTraining-office Assignment\Assignment-8\DelegatePractice\obj\Debug\net5.0\DelegatePractice.csproj.AssemblyReference.cache
+C:\Users\hp\Desktop\TaazaaTraining-2021\TaazaaTraining-office Assignment\Assignment-8\DelegatePractice\obj\Debug\net5.0\DelegatePractice.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\hp\Desktop\TaazaaTraining-2021\TaazaaTraining-office Assignment\Assignment-8\DelegatePractice\obj\Debug\net5.0\DelegatePractice.AssemblyInfoInputs.cache
+C:\Users\hp\Desktop\TaazaaTraining-2021\TaazaaTraining-office Assignment\Assignment-8\DelegatePractice\obj\Debug\net5.0\DelegatePractice.AssemblyInfo.cs
+C:\Users\hp\Desktop\TaazaaTraining-2021\TaazaaTraining-office Assignment\Assignment-8\DelegatePractice\obj\Debug\net5.0\DelegatePractice.csproj.CoreCompileInputs.cache
+C:\Users\hp\Desktop\TaazaaTraining-2021\TaazaaTraining-office Assignment\Assignment-8\DelegatePractice\obj\Debug\net5.0\DelegatePractice.dll
+C:\Users\hp\Desktop\TaazaaTraining-2021\TaazaaTraining-office Assignment\Assignment-8\DelegatePractice\obj\Debug\net5.0\ref\DelegatePractice.dll
+C:\Users\hp\Desktop\TaazaaTraining-2021\TaazaaTraining-office Assignment\Assignment-8\DelegatePractice\obj\Debug\net5.0\DelegatePractice.pdb
+C:\Users\hp\Desktop\TaazaaTraining-2021\TaazaaTraining-office Assignment\Assignment-8\DelegatePractice\obj\Debug\net5.0\DelegatePractice.genruntimeconfig.cache
