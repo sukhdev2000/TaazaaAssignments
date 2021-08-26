@@ -1,0 +1,16 @@
+C:\Users\hp\Desktop\TaazaaTraining-2021\TaazaaTraining-office Assignment\Assignment-9\FileHandling\bin\Debug\net5.0\FileHandling.exe
+C:\Users\hp\Desktop\TaazaaTraining-2021\TaazaaTraining-office Assignment\Assignment-9\FileHandling\bin\Debug\net5.0\FileHandling.deps.json
+C:\Users\hp\Desktop\TaazaaTraining-2021\TaazaaTraining-office Assignment\Assignment-9\FileHandling\bin\Debug\net5.0\FileHandling.runtimeconfig.json
+C:\Users\hp\Desktop\TaazaaTraining-2021\TaazaaTraining-office Assignment\Assignment-9\FileHandling\bin\Debug\net5.0\FileHandling.runtimeconfig.dev.json
+C:\Users\hp\Desktop\TaazaaTraining-2021\TaazaaTraining-office Assignment\Assignment-9\FileHandling\bin\Debug\net5.0\FileHandling.dll
+C:\Users\hp\Desktop\TaazaaTraining-2021\TaazaaTraining-office Assignment\Assignment-9\FileHandling\bin\Debug\net5.0\ref\FileHandling.dll
+C:\Users\hp\Desktop\TaazaaTraining-2021\TaazaaTraining-office Assignment\Assignment-9\FileHandling\bin\Debug\net5.0\FileHandling.pdb
+C:\Users\hp\Desktop\TaazaaTraining-2021\TaazaaTraining-office Assignment\Assignment-9\FileHandling\obj\Debug\net5.0\FileHandling.csproj.AssemblyReference.cache
+C:\Users\hp\Desktop\TaazaaTraining-2021\TaazaaTraining-office Assignment\Assignment-9\FileHandling\obj\Debug\net5.0\FileHandling.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\hp\Desktop\TaazaaTraining-2021\TaazaaTraining-office Assignment\Assignment-9\FileHandling\obj\Debug\net5.0\FileHandling.AssemblyInfoInputs.cache
+C:\Users\hp\Desktop\TaazaaTraining-2021\TaazaaTraining-office Assignment\Assignment-9\FileHandling\obj\Debug\net5.0\FileHandling.AssemblyInfo.cs
+C:\Users\hp\Desktop\TaazaaTraining-2021\TaazaaTraining-office Assignment\Assignment-9\FileHandling\obj\Debug\net5.0\FileHandling.csproj.CoreCompileInputs.cache
+C:\Users\hp\Desktop\TaazaaTraining-2021\TaazaaTraining-office Assignment\Assignment-9\FileHandling\obj\Debug\net5.0\FileHandling.dll
+C:\Users\hp\Desktop\TaazaaTraining-2021\TaazaaTraining-office Assignment\Assignment-9\FileHandling\obj\Debug\net5.0\ref\FileHandling.dll
+C:\Users\hp\Desktop\TaazaaTraining-2021\TaazaaTraining-office Assignment\Assignment-9\FileHandling\obj\Debug\net5.0\FileHandling.pdb
+C:\Users\hp\Desktop\TaazaaTraining-2021\TaazaaTraining-office Assignment\Assignment-9\FileHandling\obj\Debug\net5.0\FileHandling.genruntimeconfig.cache
