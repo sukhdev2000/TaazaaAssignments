@@ -1,0 +1,438 @@
+//starting command
+
+test=# \c test;
+You are now connected to database "test" as user "postgres".
+
+
+test=# \dt
+
+             List of relations
+ Schema |      Name      | Type  |  Owner
+--------+----------------+-------+----------
+ public | dept           | table | postgres
+ public | emp_table      | table | postgres
+ public | employee       | table | postgres
+ public | practice       | table | postgres
+ public | student        | table | postgres
+ public | taazaatraining | table | postgres
+(6 rows)
+
+
+test=# select *from dept;
+ deptid | deptname
+--------+-----------
+    101 | Business
+    102 | Technical
+    103 | HR
+(3 rows)
+
+
+test=# select *from employee;
+ empid | employee_name | deptid
+-------+---------------+--------
+   200 | Sukhdev       |    102
+   201 | Rahul         |    102
+   202 | Karan         |    102
+   203 | Gurpreet      |    102
+(4 rows)
+
+
+test=# select *from emp_table;;
+ e_id | e_name
+------+--------
+(0 rows)
+
+
+test=# drop emp_table;
+ERROR:  syntax error at or near "emp_table"
+LINE 1: drop emp_table;
+             ^
+test=# drop table emp_table;
+DROP TABLE
+test=# select *from practice;
+ id  |  name
+-----+---------
+ 101 | Sukhdev
+(1 row)
+
+
+test=# drop table practice;
+DROP TABLE
+test=#
+
+
+
+
+
+
+
+
+
+
+
+
+
+create table dept(deptId int primary key, deptName varchar(50));
+
+
+create table Employee(empId int primary key,employee_name varchar(50),deptId int,constraint fk_employee_dept Foreign key(deptId) references dept(deptId));
+
+ deptid | deptname
+--------+-----------
+    101 | Business
+    102 | Technical
+    103 | HR
+
+
+ empid | employee_name | deptid
+-------+---------------+--------
+   200 | Sukhdev       |    102
+   201 | Rahul         |    102
+   202 | Karan         |    102
+   203 | Gurpreet      |    102
+
+
+//error
+insert into employee(empId,employee_name,deptId)values(201,'Rahul',104);
+ERROR:  insert or update on table "employee" violates foreign key constraint "fk_employee_dept"
+DETAIL:  Key (deptid)=(104) is not present in table "dept".
+
+
+//alternate key
+here email will be alternate key
+ s_id | s_name  |         email
+------+---------+------------------------
+  100 | sukhdev | dsukhdev2000@gmail.com
+  102 | Radhika | radhika@2000@gmail.com
+  103 | Robert  | robert@gmail.com
+
+
+
+
+25/08/2021(wed) #day10
+
+//important points of postgresql
+afterlunch
+DATE,array,smallint,time,char,numeric DATATYPE
+
+before lunch
+ emp_id | emp_name | emp_address | emp_age |
+--------+----------+-------------+---------+
+      1 | sukhdev  | Delhi       |      21 |
+      6 | Rahul    | CrossRing   |      22 |
+      5 | Karan    | Botanical   |      24 |
+      2 | Gurpreet | CrossRing   |      23 |
+1)update
+update Taazaatraining set emp_address='CrossRing' where emp_id=2;
+
+2)Delete
+delete from Taazaatraining where emp_address='CrossRing';
+
+
+3)where
+update Taazaatraining set emp_address='CrossRing' where emp_id=2;
+
+4)order by
+select emp_name from taazaatraining order by emp_name asc;
+
+5) *group by
+
+
+6) *having
+7)distinct
+8)limit
+9)fetch
+10) *in
+11) *like
+test=# select *from taazaatraining where emp_name like '%s';
+ emp_id | emp_name | emp_address | emp_age
+--------+----------+-------------+---------
+(0 rows)
+
+
+test=# select *from taazaatraining where emp_name like '%S';
+ emp_id | emp_name | emp_address | emp_age
+--------+----------+-------------+---------
+(0 rows)
+
+
+test=# select *from taazaatraining where emp_name like 's%';
+ emp_id | emp_name | emp_address | emp_age
+--------+----------+-------------+---------
+      1 | sukhdev  | Delhi       |      21
+(1 row)
+
+
+test=# select *from taazaatraining where emp_name like '%an';
+ emp_id | emp_name | emp_address | emp_age
+--------+----------+-------------+---------
+      5 | Karan    | Botanical   |      24
+(1 row)
+
+
+test=# select *from taazaatraining where emp_name like '%an';
+ emp_id | emp_name | emp_address | emp_age
+--------+----------+-------------+---------
+      5 | Karan    | Botanical   |      24
+(1 row)
+
+
+test=# select *from taazaatraining where emp_name like '%s';
+ emp_id | emp_name | emp_address | emp_age
+--------+----------+-------------+---------
+(0 rows)
+
+
+12)AND OR NOT
+select *from taazaatraining where emp_id=1 AND emp_name='sukhdev';
+select *from taazaatraining where emp_age=21 OR emp_age=24;
+test=# select emp_id, emp_name from taazaatraining where emp_name not in('karan','Gurpreet');
+ emp_id | emp_name
+--------+----------
+      1 | sukhdev
+      6 | Rahul
+      5 | Karan
+(3 rows)
+test=# select emp_id, emp_name from taazaatraining where emp_name not in('Karan','Gurpreet');
+ emp_id | emp_name
+--------+----------
+      1 | sukhdev
+      6 | Rahul
+
+
+13)BETWEEN
+14)EXISTS 
+
+
+
+
+
+//how to add one new column to existing table
+alter table taazaatraining add column salary int;
+
+
+
+
+
+
+
+
+//joins
+test=# insert into student(s_name,s_location,s_branch) values('Kevin','Delhi','ME');
+INSERT 0 1
+test=# select*from student;
+ s_id | s_location | s_branch |   s_doj    |  s_name
+------+------------+----------+------------+----------
+    1 | Delhi      | CSE      | 2021-08-26 | Sukhdev
+    2 | UP         | CSE      | 2021-08-26 | Gurpreet
+    3 | Lucknow    | CSE      | 2021-08-26 | karan
+    4 | Lucknow    | CSE      | 2021-08-26 | Rahul
+    5 | Kerela     | EEE      | 2021-08-26 | Robert
+    6 | Delhi      | ME       | 2021-08-26 | Kevin
+(6 rows)
+
+
+test=# create table Department(
+test(# dept_id int generated always as identity,
+test(# primary key(dept_id),
+test(# dept_location varchar(50) not null,
+test(# dept_name varchar(50) not null);
+CREATE TABLE
+test=# insert into department (dept_location,dept_name) values('Delhi','IT');
+INSERT 0 1
+test=# insert into department (dept_location,dept_name) values('UP','Solar');
+INSERT 0 1
+test=# insert into department (dept_location,dept_name) values('Lucknow','Security');
+INSERT 0 1
+test=# insert into department (dept_location,dept_name) values('Kerela','Electrical');
+INSERT 0 1
+test=# select *from department;
+ dept_id | dept_location | dept_name
+---------+---------------+------------
+       1 | Delhi         | IT
+       2 | UP            | Solar
+       3 | Lucknow       | Security
+       4 | Kerela        | Electrical
+(4 rows)
+
+
+test=# select *from department, student where s_location=dept_location;
+ dept_id | dept_location | dept_name  | s_id | s_location | s_branch |   s_doj    |  s_name
+---------+---------------+------------+------+------------+----------+------------+----------
+       1 | Delhi         | IT         |    6 | Delhi      | ME       | 2021-08-26 | Kevin
+       1 | Delhi         | IT         |    1 | Delhi      | CSE      | 2021-08-26 | Sukhdev
+       2 | UP            | Solar      |    2 | UP         | CSE      | 2021-08-26 | Gurpreet
+       3 | Lucknow       | Security   |    4 | Lucknow    | CSE      | 2021-08-26 | Rahul
+       3 | Lucknow       | Security   |    3 | Lucknow    | CSE      | 2021-08-26 | karan
+       4 | Kerela        | Electrical |    5 | Kerela     | EEE      | 2021-08-26 | Robert
+(6 rows)
+
+
+
+//inner join
+HINT:  Perhaps you meant to reference the column "department.dept_location".
+
+test=# select *from department INNER JOIN student ON (department.dept_location=student.s_location);
+ dept_id | dept_location | dept_name  | s_id | s_location | s_branch |   s_doj    |  s_name
+---------+---------------+------------+------+------------+----------+------------+----------
+       1 | Delhi         | IT         |    6 | Delhi      | ME       | 2021-08-26 | Kevin
+       1 | Delhi         | IT         |    1 | Delhi      | CSE      | 2021-08-26 | Sukhdev
+       2 | UP            | Solar      |    2 | UP         | CSE      | 2021-08-26 | Gurpreet
+       3 | Lucknow       | Security   |    4 | Lucknow    | CSE      | 2021-08-26 | Rahul
+       3 | Lucknow       | Security   |    3 | Lucknow    | CSE      | 2021-08-26 | karan
+       4 | Kerela        | Electrical |    5 | Kerela     | EEE      | 2021-08-26 | Robert
+(6 rows)
+
+
+
+//functions in postgresql
+
+projectdb=# create function Manipulation(a int)
+projectdb-# returns varchar(20)
+projectdb-# language plpgsql
+projectdb-# as
+projectdb-# $$
+projectdb$# declare
+projectdb$# city varchar(20)='Noida';
+projectdb$# begin
+projectdb$# return city;
+projectdb$# end;
+projectdb$# $$;
+CREATE FUNCTION
+projectdb=# select manipulation(2);
+ manipulation
+--------------
+ Noida
+(1 row)
+
+
+
+//function which returns a table 
+projectdb=# create function getDetails()
+projectdb-# returns setof membership
+projectdb-# as $$
+projectdb$# select *from membership;
+projectdb$# $$ language sql;
+CREATE FUNCTION
+projectdb=# select *from getDetails();
+ username | password | age
+----------+----------+-----
+ Sukhdev  | xyz@2000 |  21
+ Robin    | abz@2000 |  21
+(2 rows)
+
+create function getPassword4(name varchar)
+returns varchar
+as $$
+begin
+return (select password from membership where username=name);
+end;
+$$ language plpgsql;
+CREATE FUNCTION
+
+projectdb=# select *from getPassword1('Sukhdev');
+ getpassword1
+--------------
+ xyz@2000
+(1 row)
+
+
+//how to count all the records in the table
+projectdb=# create function CountRecords()
+projectdb-# returns integer
+projectdb-# as $$
+projectdb$# begin
+projectdb$# return (select count(*) from membership);
+projectdb$# end;
+projectdb$# $$ language plpgsql;
+CREATE FUNCTION
+projectdb=# select CountRecords();
+ countrecords
+--------------
+            2
+(1 row)
+
+//1-sept-2021
+taazaadbs=# create or replace function UserValidate(uname character varying, upass character varying)
+ returns integer
+ as
+$$
+ Begin
+if (select count(*) from tbl_users where username = uname AND password = upass)>0  then
+return 1;
+ else
+ return 0;
+end if;
+end;
+ $$
+language plpgsql;
+CREATE FUNCTION
+taazaadbs=# select UserValidate('sukhdev','test123');
+ uservalidate
+--------------
+            1
+(1 row)
+
+
+
+//2-sept-2021
+
+//to return table
+taazaadbs=# create or replace function details2()
+taazaadbs-# returns setof tbl_users
+taazaadbs-# as
+taazaadbs-# $$
+taazaadbs$# begin
+taazaadbs$# return query select *from tbl_users;
+taazaadbs$# end;
+taazaadbs$# $$ language plpgsql;
+CREATE FUNCTION
+taazaadbs=# select details2();
+     details2
+-------------------
+ (sukhdev,test123)
+ (karan,test456)
+(2 rows)
+
+
+
+//to count records
+
+taazaadbs=# create function details()
+taazaadbs-# returns integer
+taazaadbs-# as
+taazaadbs-# $$
+taazaadbs$# declare temp integer;
+taazaadbs$# begin
+taazaadbs$# temp= count(*) from tbl_users;
+taazaadbs$# return temp;
+taazaadbs$# end;
+taazaadbs$# $$ language plpgsql;
+CREATE FUNCTION
+taazaadbs=# select details();
+ details
+---------
+       2
+(1 row)
+
+
+//doubt
+create or replace function search3(i integer)
+returns varchar
+as
+$$
+declare name varchar(50);
+begin
+name=(select username from tbl_users where id=i);
+if(name=NULL)
+then Return NULL;
+else return name;
+end if;
+end;
+$$ language plpgsql;
+CREATE FUNCTION
+taazaadbs=# select search2(3);
+ search2
+---------
+
+(1 row)

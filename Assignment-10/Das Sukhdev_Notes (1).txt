@@ -1,0 +1,274 @@
+Introduction to C#
+C# is language of .dotnet which is a product of Microsoft
+
+How to make c# Console based Application:
+
+1. Create a new application File
+	dotnet new console --name AppName
+
+2. Create a new library file
+	dotnet new classlib -o LibraryName
+
+3. Create a new solution file
+	dotnet new sln --name SolFileName
+
+4. Add .csproj file inside solution file
+	cd SolFileName
+	dotnet sln add ../fName/fName.csproj
+
+
+To build the project: dotnet build
+To run the project : dotnet run
+
+Note: dotnet build internally calls the "Roslyn Compiler" to compile the program.
+      dotnet run internally calls CLR(Runtime environment) to execute the program.
+
+Namespace In C#
+It is collection of classes, and also remove ambiguity when we have multiple classes with same name.
+
+
+How to Create Library In and its references
+
+1)Open the command prompt by ”Cmd” command.
+2)Create a new directory where you want to create your console application, let say(assignmet2) with “dotnet new console –name app2”.
+3)Open visual studio by “code .” command.
+4)Compile and run the application by “dotnet build and dotnet run”.
+5)Now we need to create libraries with
+“dotnet new classlib -o <libname>”
+6)Now its time to create Solution File with “dotnet new sln –name
+<solution-file-name>”
+7)Now we have to add two libraries that we have created to solution file with
+“dotnet sln add ../app2/app2.csproj”
+8)Now we have to take reference from mlab, clab library to app2.csproj(mlab,clab are just examples)
+
+
+
+
+
+
+
+
+
+
+OOPs concept in C#  
+
+Class - Class is a keyword/technique to create user defined data type (which can be customized according to our needs/requirements).
+      - within a class there can be multiple type of variables according to our needs, internally user-defined classes are inherited from object.
+
+Now Question Raises why?
+It is beacuse it contians very important functions like 
+1)MemberWiseClone();
+2)ToString();
+3)GetHashCode() ;
+4)Finalize(); It is a function which act as a destructor and it will be called When we come out from Main() Scope to deallocate the memory.
+
+Object - An Object is an instance of a Class. 
+       - When a class is defined, no memory is allocated but when it is instantiated (i.e. an object is created) memory is allocated.
+
+Variable of a class - a copy of a class that is not initialized.
+
+Instance of a class - a copy of a class that is initialized by using the new keyword. 
+		    - Instance has its own memory and never shared with another instance.
+
+Reference of a class - a copy of a class that is initialized using an existing instance. 
+		     - will not have any memory allocation, they will be sharing the same memory of the instance that is assigned for initializing the variable.
+
+
+
+Constructor - It's a special method present under a class responsible for initializing the variables of that class.
+	    - The name of a constructor method is exactly the same name of the class in which it was present.
+	    - It's a non value returning method.
+	    - Each and every class requires this constructor if we want to create the instance of that class.
+
+class Test
+{
+   int i;
+}
+
+Test obj =  new Test();		// instance of class
+
+We have to define a constructor under the class, but if we fails to do so an implicit constructor gets defined in the class by the compiler.
+
+class Test
+{
+   int i;
+   string s;
+   bool b;
+   // Implicit constructor / Default Constructor - Parameterless
+   public Example()
+   {
+	i=0;		//initializing the variable
+	s = null;
+   }
+}
+
+
+Default Constructor - a constructor which doesn't take any parameter. 
+		    - Implicitely defined constructors are public.
+
+We can also define a constructor under the class and we define it we can call it as Explicit Constructor. It can be Parameter-less or Parameterized also.
+Syntax of Explicitely defined Constructor:
+
+<modifiers> <Name>(<Parameters>)
+{
+   -statements
+}
+
+Defining - Implicit or Explicit
+Calling  - Explicit 	//you only should call, if we don't call a constructor it is not going to execute
+
+Types of Constructor:
+1. Default or Parameter-less Constructor - if a constructor doesn't take any parameter. 
+					 - can be defined by programmer explicitely or implicitely(provided there is no explicit constructor under the class)
+2. Parameterized Constructor - if a constructor method is defined with any parameter. 
+			     - can be defined by the programmer only and can never be defined implicitely.
+3. Static Constructor - If a constructor is explicitely declared by using static modifier.
+		      - without static keyword are non-static/instance constructors(except implicitely called constructors).
+		      - if a class contains any static variables then only implicit static constructor will be present or else we need to define them explicitely.
+		      - responsible for initializing static variables
+		      - In the life cycle of a class it executes only one time.
+		      - *these constructors are first to execute under any class.
+		      - *static constructors can't be parametrized so overloading static constructors is not possible.
+class Test
+{
+   static Test() 	//static constructor
+   {
+   }
+   public Test()	//implicit default constructor
+   {
+   }
+}
+
+4. Copy Constructor - if we want to create multiple instances with the same values than we use these copy constructors.
+		    - the constructor takes the same class as a parameter to it.
+
+5. Constructor Chaining - when we create instance of a class, run time will actually create instantiation chain, every class in heirarchy from your subclass all the way up to the object class will instantiated when your base class is instantiated, and in c# aleast we have two objects in any case.
+
+
+
+
+With var & dynamic we can do aliasing of a class.
+
+var - used for aliasing
+    - early binding (initialization is must, also declaration)(decides at compile time)
+
+dynamic - used for aliasing
+        - late binding (initialization not necessary)(decides at runtime)
+
+we can also define a variable with object but then in that case we require explicit conversion.
+
+Out - can return multiple values
+    - can be used only in function parameter
+    - don't need to be initialized (However the called method is required to assign a value before the method returns)
+
+Ref - can return multiple values
+    - can be used only in function parameter
+    - need to be initialized
+    - an argument is passed by a reference, not by value
+
+this - If there is both default and parametrized constructor in a class. We don't want to call the function twice, that's why this keyword is used.
+     - this is called constructor chaining.
+
+same class - this keyword
+different class - base keyword
+Base Keyword Is also useful in case of constructor chaining
+
+
+Abstract Class - Contains both Abstract(Methods without method body) and Non-Abstract(Methods with method body) methods
+	       - It helps derived class to become more consistant
+	       - we have to use abstract keyword to define a class as abstract
+
+abstract class math
+{
+  public abstract void Add(intx, int y);	//Abstract Method
+  public void Sub(int x, int y)			//Non-Abstract method
+  {
+	Console.WriteLine(x-y);
+  }
+}
+
+Note: We can't create instance of a class which contains abstract methods,
+they can be implemented using override
+
+public override void Sub(int x, int y)
+{
+    Console.WriteLine(x-y);
+}
+
+Interface - Makes the rules for classes / makes class consistant
+	  - It is also a user-defined data type
+	  - Contains only Abstract Methods(Methods without method body)
+	  - default scope of the members is public
+	  - we can't declare any fields/variables under an interface
+	  - an interface can inherit from another interface
+Syntax: 
+<modifier> interface <name>
+{
+    -Abstract member declaration
+}
+
+
+Properties - Properties is a mechanism to access the private variable of a class outside the class.
+	   - By properties we can achieve encapsulation 
+	   - get, set is an accessor
+	   - using get we retrieve the value
+	   - using set we assign the value
+	   - value is a reversed keyword to assign data to the variable
+
+Variables in c#
+1)Instance Variables
+These variables can be initialized with the help of constructors, functions, objects that's why they known as Instance variables.
+
+2)Instance Read Only Variables
+These variables can be initialized by constructor only and we cannot change the value or reassign a value to a readonly variable or object in any other method except the constructor.
+
+3)Static Variables
+A static variable is declared with the help of static keyword. When a variable is declared as static, then a single copy of the variable is created and shared among all objects at the class level. Static variables are accessed with the name of the class, they do not require any object for access.
+
+4)Static Read Only Variables
+These variables can be accessed with the help of static constructor only.
+
+
+Memory Allocation In C#
+Basically we have two kinds of memory allocation in c#
+
+Static Memory Allocation - This memory comes into picture when we have to store fix sized Memory like bool, byte, char, decimal, double, enum, float, int, long, sbyte, short and struct.
+because we know already how much memory they will take, and they will get memory allocation in stack, and they are also known to store value type variables.
+
+Dynamic Memory Allocation - This memory comes into the picture when we have to store reference type variables like in the case when we don't no how much memory it will take, like we have classes and String concept their memory allocation takes place in Heap Memory and all the varaibles present inside that class also.
+
+
+
+Collections -
+ 
+Non-Generic Collection	 	Generic Collection
+ArrayList    		          List
+HashTable  		          Dictionary
+SortedList   		          SortedList  
+Stack           	          Stack
+Queue         		          Queue
+
+
+
+
+Generics - It is an enhanced version of collection
+Delegate - It is way to achieve encapsulation
+	 - It holds the reference of a method and then calls the method for execution.
+	 - If object of delegate have multiple method's reference, then all function signature(parameter, return type) will be same.
+
+
+Predefined Delegates: 
+Func <> - used when we have a value returning method
+Action <> - used when we have a non-value returning method
+predicate <> - when we want the return type as boolean
+
+
+File Handling - When we design the application & if a exception(logical error) comes, then we have to maintain the log of that exception
+	      - It means we have to create the file to maintain the log (cause of exception).
+	      - In dotnet we have the namespace "System.IO", which consists of several classes to create a file & write onto file and perform several manipulations
+	      - try, throw, catch plays a major role for handling the exception.
+	      - we write the code in try block & if any exception comes, CLR internally uses the keyword called throw & throw find suitable catch to handle the exception.
+
+
+
+
