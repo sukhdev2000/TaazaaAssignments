@@ -1,0 +1,142 @@
+sukhdev=# update taazaatraining set salary=10000 where id=1;
+UPDATE 1
+sukhdev=# select *from taazaatraining;
+ id |    name     | address | age | salary
+----+-------------+---------+-----+--------
+  2 | Rahul       | Noida   |  23 |
+  3 | Karan       | Lucknow |  22 |
+  4 | Gurpreet    | Punjab  |  24 |
+  5 | Ram         | Lucknow |  21 |
+  6 | Anil        | Delhi   |  25 |
+  1 | Das Sukhdev | Delhi   |  21 |  10000
+(6 rows)
+
+
+sukhdev=# select * from taazaatraining order by id;
+ id |    name     | address | age | salary
+----+-------------+---------+-----+--------
+  1 | Das Sukhdev | Delhi   |  21 |  10000
+  2 | Rahul       | Noida   |  23 |
+  3 | Karan       | Lucknow |  22 |
+  4 | Gurpreet    | Punjab  |  24 |
+  5 | Ram         | Lucknow |  21 |
+  6 | Anil        | Delhi   |  25 |
+(6 rows)
+
+
+sukhdev=# update taazaatraining set salary=10000 where id=2;
+UPDATE 1
+sukhdev=# update taazaatraining set salary=10000 where id=3;
+UPDATE 1
+sukhdev=# select * from taazaatraining order by id;
+ id |    name     | address | age | salary
+----+-------------+---------+-----+--------
+  1 | Das Sukhdev | Delhi   |  21 |  10000
+  2 | Rahul       | Noida   |  23 |  10000
+  3 | Karan       | Lucknow |  22 |  10000
+  4 | Gurpreet    | Punjab  |  24 |
+  5 | Ram         | Lucknow |  21 |
+  6 | Anil        | Delhi   |  25 |
+(6 rows)
+
+
+sukhdev=# update taazaatraining set salary=15000 where id=4;
+UPDATE 1
+sukhdev=# select * from taazaatraining order by id;
+ id |    name     | address | age | salary
+----+-------------+---------+-----+--------
+  1 | Das Sukhdev | Delhi   |  21 |  10000
+  2 | Rahul       | Noida   |  23 |  10000
+  3 | Karan       | Lucknow |  22 |  10000
+  4 | Gurpreet    | Punjab  |  24 |  15000
+  5 | Ram         | Lucknow |  21 |
+  6 | Anil        | Delhi   |  25 |
+(6 rows)
+
+
+sukhdev=# update taazaatraining set salary=15000 where id=5;
+UPDATE 1
+sukhdev=# update taazaatraining set salary=20000 where id=6;
+UPDATE 1
+sukhdev=# select * from taazaatraining order by id;
+ id |    name     | address | age | salary
+----+-------------+---------+-----+--------
+  1 | Das Sukhdev | Delhi   |  21 |  10000
+  2 | Rahul       | Noida   |  23 |  10000
+  3 | Karan       | Lucknow |  22 |  10000
+  4 | Gurpreet    | Punjab  |  24 |  15000
+  5 | Ram         | Lucknow |  21 |  15000
+  6 | Anil        | Delhi   |  25 |  20000
+(6 rows)
+
+
+sukhdev=# alter table taazaatraining add column dept_name varchar(50);
+ALTER TABLE
+sukhdev=# select * from taazaatraining order by id;
+ id |    name     | address | age | salary | dept_name
+----+-------------+---------+-----+--------+-----------
+  1 | Das Sukhdev | Delhi   |  21 |  10000 |
+  2 | Rahul       | Noida   |  23 |  10000 |
+  3 | Karan       | Lucknow |  22 |  10000 |
+  4 | Gurpreet    | Punjab  |  24 |  15000 |
+  5 | Ram         | Lucknow |  21 |  15000 |
+  6 | Anil        | Delhi   |  25 |  20000 |
+(6 rows)
+
+
+sukhdev=# update taazaatraining set dept_name='Software' where id=1 and id=2;
+UPDATE 0
+sukhdev=# select * from taazaatraining order by id;
+ id |    name     | address | age | salary | dept_name
+----+-------------+---------+-----+--------+-----------
+  1 | Das Sukhdev | Delhi   |  21 |  10000 |
+  2 | Rahul       | Noida   |  23 |  10000 |
+  3 | Karan       | Lucknow |  22 |  10000 |
+  4 | Gurpreet    | Punjab  |  24 |  15000 |
+  5 | Ram         | Lucknow |  21 |  15000 |
+  6 | Anil        | Delhi   |  25 |  20000 |
+(6 rows)
+
+
+sukhdev=# update taazaatraining set dept_name='Software' where id=1;
+UPDATE 1
+sukhdev=# update taazaatraining set dept_name='Software' where id=2;
+UPDATE 1
+sukhdev=# update taazaatraining set dept_name='Software' where id=3;
+UPDATE 1
+sukhdev=# update taazaatraining set dept_name='Business' where id=4;
+UPDATE 1
+sukhdev=# update taazaatraining set dept_name='Business' where id=5;
+UPDATE 1
+sukhdev=# update taazaatraining set dept_name='Accounts' where id=6;
+UPDATE 1
+sukhdev=# select * from taazaatraining order by id;
+ id |    name     | address | age | salary | dept_name
+----+-------------+---------+-----+--------+-----------
+  1 | Das Sukhdev | Delhi   |  21 |  10000 | Software
+  2 | Rahul       | Noida   |  23 |  10000 | Software
+  3 | Karan       | Lucknow |  22 |  10000 | Software
+  4 | Gurpreet    | Punjab  |  24 |  15000 | Business
+  5 | Ram         | Lucknow |  21 |  15000 | Business
+  6 | Anil        | Delhi   |  25 |  20000 | Accounts
+(6 rows)
+
+
+//here we are find sum of salary department wise with the help of group by clause//
+sukhdev=# select dept_name, sum(salary) from taazaatraining group by dept_name;
+ dept_name |  sum
+-----------+-------
+ Accounts  | 20000
+ Software  | 30000
+ Business  | 30000
+(3 rows)
+
+
+//here we are finding number of employees working in particular department// 
+sukhdev=# select dept_name, count(name) from taazaatraining group by dept_name;
+ dept_name | count
+-----------+-------
+ Accounts  |     1
+ Software  |     3
+ Business  |     2
+(3 rows)

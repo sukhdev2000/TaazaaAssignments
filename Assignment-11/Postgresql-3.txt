@@ -1,0 +1,634 @@
+test=# create table employees(
+test(# id int primary key,
+test(# name varchar(100),
+test(# contact Text[]);
+CREATE TABLE
+test=# insert into employees values(2,'Sukhdev','{"(91)-8376092315"}' );
+INSERT 0 1
+test=# insert into employees values(3,'karan','{"(91)-8376045078"}' );
+INSERT 0 1
+test=# select *from employees;
+ id |  name   |      contact
+----+---------+-------------------
+  2 | Sukhdev | {(91)-8376092315}
+  3 | karan   | {(91)-8376045078}
+(2 rows)
+
+
+test=# insert into employees values(3,'karan','(91)-8376045078' );
+ERROR:  malformed array literal: "(91)-8376045078"
+LINE 1: insert into employees values(3,'karan','(91)-8376045078' );
+                                               ^
+DETAIL:  Array value must start with "{" or dimension information.
+test=# do $$
+test$# begin
+test$# for cnt in 1..10 loop
+test$# raise notice 'cnt: %',cnt;
+test$# end loop;
+test$# end; $$
+test-# ;
+NOTICE:  cnt: 1
+NOTICE:  cnt: 2
+NOTICE:  cnt: 3
+NOTICE:  cnt: 4
+NOTICE:  cnt: 5
+NOTICE:  cnt: 6
+NOTICE:  cnt: 7
+NOTICE:  cnt: 8
+NOTICE:  cnt: 9
+NOTICE:  cnt: 10
+DO
+test=# do $$
+test$# begin
+test$# for a in 1..10 loop
+test$# raise notice 'a: %',a;
+test$# end loop;
+test$# end; $$
+test-# ;
+NOTICE:  a: 1
+NOTICE:  a: 2
+NOTICE:  a: 3
+NOTICE:  a: 4
+NOTICE:  a: 5
+NOTICE:  a: 6
+NOTICE:  a: 7
+NOTICE:  a: 8
+NOTICE:  a: 9
+NOTICE:  a: 10
+DO
+test=# do $$
+test$# begin
+test$# for a in 1..10 loop
+test$# raise news 'a: %',a;
+test$# end loop;
+test$# end; $$
+test-# ;
+ERROR:  unrecognized exception condition "news"
+CONTEXT:  compilation of PL/pgSQL function "inline_code_block" near line 4
+test=# DECLARE vname varchar(50);
+ERROR:  syntax error at or near "varchar"
+LINE 1: DECLARE vname varchar(50);
+                      ^
+test=# DECLARE vname varchar;
+ERROR:  syntax error at or near "varchar"
+LINE 1: DECLARE vname varchar;
+                      ^
+test=# DECLARE vname varchar :='Sukhdev';
+ERROR:  syntax error at or near "varchar"
+LINE 1: DECLARE vname varchar :='Sukhdev';
+                      ^
+test=# DECLARE vname character :='Sukhdev';
+ERROR:  syntax error at or near "character"
+LINE 1: DECLARE vname character :='Sukhdev';
+                      ^
+test=# do $$
+test$# declare
+test$# count:
+test$# ;
+test$# end $$;
+ERROR:  syntax error at or near ":"
+LINE 3: count:
+             ^
+CONTEXT:  invalid type name ":
+"
+test=# do $$
+test$# declare
+test$#    counter    integer := 1;
+test$#    first_name varchar(50) := 'John';
+test$#    last_name  varchar(50) := 'Doe';
+test$#    payment    numeric(11,2) := 20.5;
+test$# begin
+test$#    raise notice '% % % has been paid % USD',
+test$#        counter,
+test$#    first_name,
+test$#    last_name,
+test$#    payment;
+test$# end $$;
+NOTICE:  1 John Doe has been paid 20.50 USD
+DO
+test=# do $$
+test$# declare
+test$#    id    integer := 1;
+test$#    name varchar(50) := 'John';
+test$#    age   numeric := 21;
+test$# begin
+test$#    raise notice '% % %',
+test$#        id,
+test$#        name,
+test$#        age;
+test$# end $$;
+NOTICE:  1 John 21
+DO
+test=# do $$
+test$# declare
+test$#    created_at time := now();
+test$# begin
+test$#    raise notice '%', created_at;
+test$#    perform pg_sleep(10);
+test$#    raise notice '%', created_at;
+test$# end $$;
+NOTICE:  15:37:10.927176
+NOTICE:  15:37:10.927176
+DO
+test=# do $$
+test$# declare
+test$#    created_at time := now();
+test$# begin
+test$#    raise notice '%', created_at;
+test$# end $$;
+NOTICE:  15:44:35.93528
+DO
+                           ^
+test=# do $$
+test$# begin
+test$# for a in 1..10 loop
+test$# raise notice 'a= %',a;
+test$# end loop;
+test$# end; $$;
+NOTICE:  a= 1
+NOTICE:  a= 2
+NOTICE:  a= 3
+NOTICE:  a= 4
+NOTICE:  a= 5
+NOTICE:  a= 6
+NOTICE:  a= 7
+NOTICE:  a= 8
+NOTICE:  a= 9
+NOTICE:  a= 10
+DO
+      
+test=# do $$
+test$# declare
+test$# age integer :=10;
+test$# begin
+test$# if age<15 then
+test$# raise notice 'value is less than 15';
+test$# end if;
+test$# end; $$;
+NOTICE:  value is less than 15
+DO
+test=#
+
+
+
+
+//functions in postgresql
+
+projectdb=# create function Manipulation(a int)
+projectdb-# returns varchar(20)
+projectdb-# language plpgsql
+projectdb-# as
+projectdb-# $$
+projectdb$# declare
+projectdb$# city varchar(20)='Noida';
+projectdb$# begin
+projectdb$# return city;
+projectdb$# end;
+projectdb$# $$;
+CREATE FUNCTION
+projectdb=# select manipulation(2);
+ manipulation
+--------------
+ Noida
+(1 row)
+
+
+
+//function which returns a table 
+projectdb=# create function getDetails()
+projectdb-# returns setof membership
+projectdb-# as $$
+projectdb$# select *from membership;
+projectdb$# $$ language sql;
+CREATE FUNCTION
+projectdb=# select *from getDetails();
+ username | password | age
+----------+----------+-----
+ Sukhdev  | xyz@2000 |  21
+ Robin    | abz@2000 |  21
+(2 rows)
+
+create function getPassword4(name varchar)
+returns varchar
+as $$
+begin
+return (select password from membership where username=name);
+end;
+$$ language plpgsql;
+CREATE FUNCTION
+
+projectdb=# select *from getPassword1('Sukhdev');
+ getpassword1
+--------------
+ xyz@2000
+(1 row)
+
+
+//how to count all the records in the table
+projectdb=# create function CountRecords()
+projectdb-# returns integer
+projectdb-# as $$
+projectdb$# begin
+projectdb$# return (select count(*) from membership);
+projectdb$# end;
+projectdb$# $$ language plpgsql;
+CREATE FUNCTION
+projectdb=# select CountRecords();
+ countrecords
+--------------
+            2
+(1 row)
+
+//1-sept-2021
+taazaadbs=# create or replace function UserValidate(uname character varying, upass character varying)
+ returns integer
+ as
+$$
+ Begin
+if (select count(*) from tbl_users where username = uname AND password = upass)>0  then
+return 1;
+ else
+ return 0;
+end if;
+end;
+ $$
+language plpgsql;
+CREATE FUNCTION
+taazaadbs=# select UserValidate('sukhdev','test123');
+ uservalidate
+--------------
+            1
+(1 row)
+
+
+
+//2-sept-2021
+
+//to return table
+taazaadbs=# create or replace function details2()
+taazaadbs-# returns setof tbl_users
+taazaadbs-# as
+taazaadbs-# $$
+taazaadbs$# begin
+taazaadbs$# return query select *from tbl_users;
+taazaadbs$# end;
+taazaadbs$# $$ language plpgsql;
+CREATE FUNCTION
+taazaadbs=# select details2();
+     details2
+-------------------
+ (sukhdev,test123)
+ (karan,test456)
+(2 rows)
+
+sukhdev=# create or replace function getemployee()
+sukhdev-# returns table(id integer, name varchar(50),location varchar(50),age integer,sal integer,dept varchar(50))
+sukhdev-# language 'plpgsql'
+sukhdev-# as
+sukhdev-# $$
+sukhdev$# begin
+sukhdev$# return query select * from taazaatraining;
+sukhdev$# end;
+sukhdev$# $$;
+CREATE FUNCTION
+sukhdev=# select * from getemployee();
+ id |    name     | location | age |  sal  |   dept
+----+-------------+----------+-----+-------+----------
+  1 | Das Sukhdev | Delhi    |  21 | 10000 | Software
+  2 | Rahul       | Noida    |  23 | 10000 | Software
+  3 | Karan       | Lucknow  |  22 | 10000 | Software
+  4 | Gurpreet    | Punjab   |  24 | 15000 | Business
+  5 | Ram         | Lucknow  |  21 | 15000 | Business
+  6 | Anil        | Delhi    |  25 | 20000 | Accounts
+(6 rows)
+
+
+
+sukhdev=# create or replace function getData()
+sukhdev-# returns table(department character varying(50),emp_name varchar(50))
+sukhdev-# language 'plpgsql'
+sukhdev-# as
+sukhdev-# $$
+sukhdev$# begin
+sukhdev$# return query select dept_name,name from taazaatraining order by dept_name;
+sukhdev$# end;
+sukhdev$# $$;
+CREATE FUNCTION
+sukhdev=# select getData();
+         getdata
+--------------------------
+ (Accounts,Anil)
+ (Business,Gurpreet)
+ (Business,Ram)
+ (Software,"Das Sukhdev")
+ (Software,Rahul)
+ (Software,Karan)
+(6 rows)
+
+
+sukhdev=# select * from getData();
+ department |  emp_name
+------------+-------------
+ Accounts   | Anil
+ Business   | Gurpreet
+ Business   | Ram
+ Software   | Das Sukhdev
+ Software   | Rahul
+ Software   | Karan
+(6 rows)
+
+
+
+//to count records
+
+taazaadbs=# create function details()
+taazaadbs-# returns integer
+taazaadbs-# as
+taazaadbs-# $$
+taazaadbs$# declare temp integer;
+taazaadbs$# begin
+taazaadbs$# temp= count(*) from tbl_users;
+taazaadbs$# return temp;
+taazaadbs$# end;
+taazaadbs$# $$ language plpgsql;
+CREATE FUNCTION
+taazaadbs=# select details();
+ details
+---------
+       2
+(1 row)
+
+
+//doubt
+create or replace function search3(i integer)
+returns varchar
+as
+$$
+declare name varchar(50);
+begin
+name=(select username from tbl_users where id=i);
+if(name=NULL)
+then Return NULL;
+else return name;
+end if;
+end;
+$$ language plpgsql;
+CREATE FUNCTION
+taazaadbs=# select search2(3);
+ search2
+---------
+
+(1 row)
+
+
+
+//3-sept-2021
+By the help of procedure we are going to 
+1)Insert
+2)Update
+3)delete
+
+//insert
+create procedure addEmployee
+(
+EmpId INOUT INT,  
+    EmpName VARCHAR(100),  
+    EmpDob DATE,  
+    EmpCity VARCHAR(100),  
+    EmpDesignation VARCHAR(100),  
+    EmpJoiningDate DATE
+)
+LANGUAGE plpgsql AS  
+$$  
+BEGIN         
+   INSERT INTO Employees (Name,DateOfBirth,City,Designation,JoiningDate) VALUES   
+    (EmpName,  
+     EmpDob,  
+     EmpCity,  
+     EmpDesignation,  
+     EmpJoiningDate  
+    ) RETURNING Id INTO EmpId
+end
+$$;
+
+//update
+CREATE OR REPLACE PROCEDURE UpdateEmployee  
+(  
+    EmpId INT,  
+    EmpName VARCHAR(100),  
+    EmpDob DATE,  
+    EmpCity VARCHAR(100),  
+    EmpDesignation VARCHAR(100),  
+    EmpJoiningDate DATE  
+)  
+LANGUAGE plpgsql AS  
+$$  
+BEGIN         
+   UPDATE Employees SET   
+   Name = EmpName,  
+   DateOfBirth = EmpDob,  
+   City = EmpCity,  
+   Designation = EmpDesignation,  
+   JoiningDate = EmpJoiningDate  
+   Where Id = EmpId;  
+END  
+$$;
+
+//delete
+day16=# CREATE OR REPLACE PROCEDURE DeleteEmployee  (EmpId INT)  LANGUAGE plpgsql AS  $$  BEGIN      DELETE FROM Employees WHERE Id = EmpId;  END  $$;
+CREATE PROCEDURE
+day16=# call DeleteEmployee(1);
+
+
+//returning values for stored 
+create procedure searchEmp2(i integer,INOUT name1 varchar default null)
+language plpgsql as 
+$$
+begin
+select name from Employees where id =i
+into name1;
+end
+$$;
+
+//second way of searching
+CREATE PROCEDURE SearchEmp3(i integer,INOUT name1 VARCHAR DEFAULT null,INOUT city1 VARCHAR DEFAULT null)
+LANGUAGE plpgsql AS
+$proc$
+BEGIN
+   SELECT name,city FROM Employees WHERE id =i
+   INTO name1,city1;                              
+END
+$proc$;
+day16=# CREATE PROCEDURE SearchEmp3(i integer,INOUT name1 VARCHAR DEFAULT null,INOUT city1 VARCHAR DEFAULT null)
+day16-# LANGUAGE plpgsql AS
+day16-# $proc$
+day16$# BEGIN
+day16$#    SELECT name,city FROM Employees WHERE id =i
+day16$#    INTO name1,city1;
+day16$# END
+day16$# $proc$;
+CREATE PROCEDURE
+day16=# call SearchEmp3(2);
+    name1    | city1
+-------------+-------
+ Das Sukhdev | Delhi
+(1 row)
+
+
+
+
+
+//day 16 practical
+taazaadbs=# create database day16;
+CREATE DATABASE
+taazaadbs=# \c day16
+You are now connected to database "day16" as user "postgres".
+day16=# CREATE TABLE Employees  (      Id serial,      Name VARCHAR(100),      DateOfBirth Date,      City VARCHAR(100),      Designation VARCHAR(100),      JoiningDate Date  );
+CREATE TABLE
+day16=# \dt
+           List of relations
+ Schema |   Name    | Type  |  Owner
+--------+-----------+-------+----------
+ public | employees | table | postgres
+(1 row)
+
+
+day16=# create procedure addEmployee
+day16-# (
+day16(# EmpId INOUT INT,
+day16(#     EmpName VARCHAR(100),
+day16(#     EmpDob DATE,
+day16(#     EmpCity VARCHAR(100),
+day16(#     EmpDesignation VARCHAR(100),
+day16(#     EmpJoiningDate DATE
+day16(# )
+day16-# LANGUAGE plpgsql AS
+day16-# $$
+day16$# BEGIN
+day16$#    INSERT INTO Employees (Name,DateOfBirth,City,Designation,JoiningDate) VALUES
+day16$#     (EmpName,
+day16$#      EmpDob,
+day16$#      EmpCity,
+day16$#      EmpDesignation,
+day16$#      EmpJoiningDate
+day16$#     ) RETURNING Id INTO EmpId;
+day16$# end
+day16$# $$;
+CREATE PROCEDURE
+day16=#
+        CALL addEmployee(1,'Peter S Parker','1999-10-01','New York' ,'Web Developer','2020-11-01');
+ empid
+-------
+     1
+(1 row)
+
+
+day16=# select *from employees;
+ id |      name      | dateofbirth |   city   |  designation  | joiningdate
+----+----------------+-------------+----------+---------------+-------------
+  1 | Peter S Parker | 1999-10-01  | New York | Web Developer | 2020-11-01
+(1 row)
+
+
+day16=# CALL addEmployee(2,'Das Sukhdev','2000-04-12','Delhi' ,'Software Developer','2021-08-09');
+ empid
+-------
+     2
+(1 row)
+
+
+day16=# select *from employees;
+ id |      name      | dateofbirth |   city   |    designation     | joiningdate
+----+----------------+-------------+----------+--------------------+-------------
+  1 | Peter S Parker | 1999-10-01  | New York | Web Developer      | 2020-11-01
+  2 | Das Sukhdev    | 2000-04-12  | Delhi    | Software Developer | 2021-08-09
+(2 rows)
+
+
+day16=# CALL addEmployee(3,'Karan','1999-10-01','Noida' ,'Web Developer','2020-11-01');
+ empid
+-------
+     3
+(1 row)
+
+
+day16=# CREATE OR REPLACE PROCEDURE UpdateEmployee
+day16-# (
+day16(#     EmpId INT,
+day16(#     EmpName VARCHAR(100),
+day16(#     EmpDob DATE,
+day16(#     EmpCity VARCHAR(100),
+day16(#     EmpDesignation VARCHAR(100),
+day16(#     EmpJoiningDate DATE
+day16(# )
+day16-# LANGUAGE plpgsql AS
+day16-# $$
+day16$# BEGIN
+day16$#    UPDATE Employees SET
+day16$#    Name = EmpName,
+day16$#    DateOfBirth = EmpDob,
+day16$#    City = EmpCity,
+day16$#    Designation = EmpDesignation,
+day16$#    JoiningDate = EmpJoiningDate
+day16$#    Where Id = EmpId;
+day16$# END
+day16$# $$;
+CREATE PROCEDURE
+day16=# CALL UpdateEmployee(1,'Peter','1999-10-01','New York' ,'Game Developer','2020-11-01');
+CALL
+day16=# select *from employees;
+ id |    name     | dateofbirth |   city   |    designation     | joiningdate
+----+-------------+-------------+----------+--------------------+-------------
+  2 | Das Sukhdev | 2000-04-12  | Delhi    | Software Developer | 2021-08-09
+  3 | Karan       | 1999-10-01  | Noida    | Web Developer      | 2020-11-01
+  1 | Peter       | 1999-10-01  | New York | Game Developer     | 2020-11-01
+(3 rows)
+
+day16=# CREATE OR REPLACE PROCEDURE DeleteEmployee  (EmpId INT)  LANGUAGE plpgsql AS  $$  BEGIN      DELETE FROM Employees WHERE Id = EmpId;  END  $$;
+CREATE PROCEDURE
+day16=# call DeleteEmployee(1);
+CALL
+day16=# select *from employees;
+ id |    name     | dateofbirth | city  |    designation     | joiningdate
+----+-------------+-------------+-------+--------------------+-------------
+  2 | Das Sukhdev | 2000-04-12  | Delhi | Software Developer | 2021-08-09
+  3 | Karan       | 1999-10-01  | Noida | Web Developer      | 2020-11-01
+(2 rows)
+
+
+
+
+
+
+//practice of saturday(4-sep-2021)
+how to insert a record into table using function
+
+sukhdev=# create or replace function insertData1(s_name varchar(50), s_address varchar(50), s_age int, s_salary int, s_dept_name varchar(50))
+sukhdev-# returns void
+sukhdev-# as
+sukhdev-# $$
+sukhdev$# begin
+sukhdev$# insert into taazaatraining(name,address,age,salary,dept_name)
+sukhdev$# values (s_name,s_address,s_age,s_salary,s_dept_name);
+sukhdev$# end
+sukhdev$# $$
+sukhdev-# language plpgsql;
+CREATE FUNCTIONCREATE FUNCTION
+sukhdev=# select insertData('Keshav','USA',25,20000,'Technical');
+ insertdata
+------------
+
+(1 row)
+
+
+sukhdev=# select * from taazaatraining;
+ id |    name     | address | age | salary | dept_name
+----+-------------+---------+-----+--------+-----------
+  1 | Das Sukhdev | Delhi   |  21 |  10000 | Software
+  2 | Rahul       | Noida   |  23 |  10000 | Software
+  3 | Karan       | Lucknow |  22 |  10000 | Software
+  4 | Gurpreet    | Punjab  |  24 |  15000 | Business
+  5 | Ram         | Lucknow |  21 |  15000 | Business
+  6 | Anil        | Delhi   |  25 |  20000 | Accounts
+  7 | Keshav      | USA     |  25 |  20000 | Technical
+(7 rows)
