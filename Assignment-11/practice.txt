@@ -140,3 +140,57 @@ sukhdev=# select dept_name, count(name) from taazaatraining group by dept_name;
  Software  |     3
  Business  |     2
 (3 rows)
+
+
+//here we are finiding number of employee and expenditure of department(dept_name wise).
+
+sukhdev=# select dept_name,count(name) as no_of_employee, sum(salary) as expenditure from employee group by dept_name;
+ dept_name | no_of_employee | expenditure
+-----------+----------------+-------------
+ Software  |              4 |       53000
+ Business  |              2 |       31000
+ Technical |              1 |       20000
+ Accounts  |              1 |       20000
+
+
+sukhdev=# select age, count(gender) from employee group by age,gender having gender='M'; //both are same
+ age | count
+-----+-------
+  23 |     1
+  24 |     1
+  25 |     2
+  21 |     2
+  22 |     1
+(5 rows)
+
+sukhdev=# select count(gender),age from employee where gender='M' group by age;
+//both are same
+ count | age
+-------+-----
+     1 |  24
+     2 |  21
+     2 |  25
+     1 |  23
+     1 |  22
+(5 rows)
+
+
+
+
+//self join
+ 
+two ways to achieve self join mechanism.
+sukhdev=# select e1.name,e1.dept_name, e1.salary from employee e1,employee e2 where e1.salary=e2.salary and e2.name='Karan';
+ name  | dept_name | salary
+-------+-----------+--------
+ Karan | Software  |  10000
+ XYZ   | Business  |  10000
+ ABC   | Business  |  10000
+(3 rows)
+
+sukhdev=#  select a.name,a.address,a.dept_name from employee a join employee b on a.dept_name=b.dept_name and b.name='Karan';
+    name     | address  | dept_name
+-------------+----------+-----------
+ Karan       | Lucknow  | Software
+ Rahul       | Noida    | Software
+ Das Sukhdev | Hydrebad | Software
