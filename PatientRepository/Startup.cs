@@ -24,13 +24,13 @@ namespace PatientRepository
             Configuration = configuration;
         }
 
-        public IConfiguration Configuration { get; }
+        public IConfiguration Configuration { get; } 
 
         // This method gets called by the runtime. Use this method to add services to the container.
-        public void ConfigureServices(IServiceCollection services)
+        public void ConfigureServices(IServiceCollection services)  
         {
-            var Cs=Configuration["PostgreSqlConnectionString"]; //connection string
-            services.AddDbContext<PatientDBContext>(t=>t.UseNpgsql(Cs));
+           // var Cs=Configuration["PostgreSqlConnectionString"]; //connection string
+            services.AddDbContext<PatientDBContext>(t=>t.UseNpgsql(Configuration.GetConnectionString("PostgreSqlConnectionString")));
             services.AddTransient<IPatientRepository,PatientsRepository>();
             services.AddControllers();
             services.AddSwaggerGen(c =>
